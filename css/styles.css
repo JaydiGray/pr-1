@@ -1,0 +1,78 @@
+/* Основний колір тексту #212121 */
+/* Додатковий колір тексту #757575 */
+/* Колір фона посилань #2196F3 */
+/* Додатковий колір посилань #FFFFFF */
+/* Колір футера rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --button-background-color: #2196F3;
+    --accent-color: #FFFFFF;
+    --background-link-color: ##F5F4FA;
+    --address-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+
+.contact-nav .link {
+    color: var(--secondary-text-color);
+}
+
+.link:hover, .link:focus {
+    color: var(--button-background-color);
+}
+
+/* Main */
+
+.hero-title {
+    color: var(--primary-text-color);
+}
+
+.button {
+    color: var(--primary-text-color);
+    background-color: var(--background-link-color);
+}
+.button.primary {
+    color: var(--accent-color);
+    background-color: var(--button-background-color);
+}
+
+.button.secondary {
+    color: var(--primary-text-color);
+    background-color: var(--background-link-color);
+}
+
+.button.secondary:hover, .button.secondary:focus {
+    color: var(--accent-color);
+    background-color: var(--button-background-color);
+}
+
+.section-title, .section-info {
+    color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+    color: var(--accent-color);
+}
+.footer-address {
+    color: var(--address-color);
+}
+.header-logo,
+.footer-logo {
+    color: var(--button-background-color);
+}
