@@ -205,7 +205,8 @@ ul {
 .team-info,
 .team-title,
 .features-title,
-.portfolio-title {
+.portfolio-title,
+.customers-title {
     margin: 0;
 
     color: var(--primary-text-color);
@@ -237,6 +238,34 @@ ul {
 
 .features p {
     margin: 0;
+}
+
+.features-list .item::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+
+}
+
+.features-list .icon-antena::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.features-list .icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.features-list .icon-diagrama::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.features-list .icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .works {
@@ -320,12 +349,103 @@ ul {
 
 .team .team-position {
     margin: 0;
+    margin-bottom: 16px;
 
     text-align: center;
     font-size: 16px;
     letter-spacing: 0.48px;
     line-height: normal;
 }
+
+.team-list .team-social {
+    display: flex;
+    justify-content: center;
+}
+
+.team-social .item-social + .item-social {
+    margin-left: 10px;
+}
+
+.team-social .link-social {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+.team-social .link-instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+.team-social .link-twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.team-social .link-facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.team-social .link-linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+
+.customers {
+    padding: 94px 0;
+}
+
+.customers .customers-title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.08px;
+}
+
+.customers-list {
+    display: flex;
+}
+
+.customers-list .link-customers {
+    display: block;
+    width: 170px;
+    height: 92px;
+    background-repeat: no-repeat;
+    background-size: 106px 60px;
+    background-position: center;
+    border: 1px solid #AFB1B8;
+}
+
+.customers-list .item-customers + .item-customers {
+    margin-left: 30px;
+}
+
+.customers-list .link-yaco {
+    background-image: url(../images/yaco.svg);
+}
+
+.customers-list .link-tagline-here {
+    background-image: url(../images/tagline-here.svg);
+}
+
+.customers-list .link-company {
+    background-image: url(../images/company.svg);
+}
+
+.customers-list .link-foster {
+    background-image: url(../images/foster.svg);
+}
+
+.customers-list .link-brand {
+    background-image: url(../images/brand.svg);
+}
+
+.customers-list .link-tag-line {
+    background-image: url(../images/company-tag-line.svg);
+}
+
+/* Код на другу сторінку Портфоліо */
 
 .portfolio {
     padding-top: 94px;
@@ -412,4 +532,64 @@ ul {
 
 .footer-color {
     color: var(--accent-color);
+}
+
+
+.footer .footer-section {
+    display: flex;
+}
+
+.footer-section .item-footer + .item-footer {
+    margin-left: 70px;
+}
+
+.footer-section .footer-title {
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-list .link-footer {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+}
+
+.footer-list .link-footer:hover,
+.footer-list .link-footer:focus {
+    background-color: var(--button-background-color);
+}
+
+.footer-list .link-instagram {
+    background-image: url(../images/instagram-white.svg);
+}
+
+.footer-list .link-twitter {
+    background-image: url(../images/twitter-white.svg);
+}
+
+.footer-list .link-facebook {
+    background-image: url(../images/facebook-white.svg);
+}
+
+.footer-list .link-linkedin {
+    background-image: url(../images/linkedin-white.svg);
+}
+
+.footer-list .item-footer + .item-footer {
+    margin-left: 10px;
 }
