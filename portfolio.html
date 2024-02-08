@@ -179,29 +179,72 @@
             <div class="item-footer">
                 <h2 class="footer-title">приєднуйтесь</h2>
                 <ul class="footer-list">
-                    <li class="item-footer"><a href="" class="link-footer">
+                    <li class="list-item"><a href="" class="link-footer">
                         <svg width="20px" height="20px">
                             <use href="./images/svg-sprite.svg#icon-instagram"></use>
                         </svg>
                     </a></li>
-                    <li class="item-footer"><a href="" class="link-footer">
+                    <li class="list-item"><a href="" class="link-footer">
                         <svg width="20px" height="20px">
                             <use href="./images/svg-sprite.svg#icon-twitter"></use>
                         </svg>
                     </a></li>
-                    <li class="item-footer"><a href="" class="link-footer">
+                    <li class="list-item"><a href="" class="link-footer">
                         <svg width="20px" height="20px">
                             <use href="./images/svg-sprite.svg#icon-facebook"></use>
                         </svg>
                     </a></li>
-                    <li class="item-footer"><a href="" class="link-footer">
+                    <li class="list-item"><a href="" class="link-footer">
                         <svg width="20px" height="20px">
                             <use href="./images/svg-sprite.svg#icon-linkedin"></use>
                         </svg>
                     </a></li>
                 </ul>
             </div>
+
+            <form action="" class="distribution item-footer">
+                <h2 class="footer-title">Підпишіться на розсилку</h2>
+                <div class="form-wrapper">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" class="footer-input" placeholder="E-mail">
+                    <button type="submit" class="button primary prime">Підписатися</button>
+                </div>
+            </form>
         </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form action="" class="modal-form">
+                <div class="modal-item">
+                    <label for="name" class="modal-label">Ім'я</label>
+                    <input type="text" name="name" id="name" class="form-input">
+                </div>
+                <div class="modal-item">
+                    <label for="phone" class="modal-label">Телефон</label>
+                    <input type="tel" name="phone" id="phone" class="form-input">
+                </div>
+                <div class="modal-item">
+                    <label for="mail" class="modal-label">Пошта</label>
+                    <input type="email" name="mail" id="mail" class="form-input">
+                </div>
+                <div class="modal-item">
+                    <label for="coment" class="modal-label">Коментар</label>
+                    <textarea name="comen" id="coment" cols="30" rows="10"  placeholder="Введіть текст" class="form-comment"></textarea>
+                </div>
+                <div class="modal-item policy">
+                    <input type="checkbox" name="policy" id="policy" class="policy-item">
+                    <label for="policy" class="policy-item">Погоджуюся з розсилкою та приймаю</label>
+                    <a href="" class="policy-item link">Умови договору</a>
+                </div>
+                <div class="modal-field">
+                    <button type="submit" class="button primary prime">Відправити</button>
+                </div>
+            </form>
+                <button class="modal-btn" data-modal-close></button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
     </footer>
 </body>
 </html>
