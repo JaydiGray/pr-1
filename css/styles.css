@@ -687,6 +687,11 @@ ul {
     margin-right: 12px;
     min-width: 360px;
 }
+
+.distribution .footer-input:focus {
+    
+}
+
 .distribution .footer-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
 
