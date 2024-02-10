@@ -266,11 +266,21 @@ ul {
 
     padding: 0;
     margin: 0;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-image: url(../images/close.svg);
+    background-color: var(--accent-color);
     background-position: center;
     cursor: pointer;
+}
+
+.modal-btn .button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-btn .button-icon:hover {
+    fill: var(--button-background-color);
 }
 
 .works-title, 
@@ -689,7 +699,7 @@ ul {
 }
 
 .distribution .footer-input:focus {
-    
+    color: var(--background-link-color);
 }
 
 .distribution .footer-input::placeholder {
@@ -743,9 +753,17 @@ ul {
 }
 
 .modal .modal-item {
+    position: relative;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.modal-item .modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-15%);
 }
 
 .modal .prime {
@@ -762,6 +780,15 @@ ul {
     border-radius: 4px;
     padding: 11px 40px;
 
+}
+
+.modal-form .form-input:focus,
+.modal-form .form-comment:focus {
+    outline: 1px solid var(--button-background-color);
+}
+
+.form-input:focus + .modal-icon {
+    fill: var(--button-background-color);
 }
 
 .modal .form-comment {
