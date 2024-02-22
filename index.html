@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -26,7 +26,7 @@
       <div class="container">
         <div class="header-inner">
         <nav class="header-nav">
-          <a href="" class="logo link--decoration"><span class="logo__text">Web</span>Studio</a>
+          <a href="" class="logo link--decoration header__logo--indent"><span class="logo__text">Web</span>Studio</a>
           <ul class="header-nav__list">
             <li class="header-nav__item"><a href="./index.html" class="header-nav__link link--decoration header-nav--current">Студія</a></li>
             <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link link--decoration">Портфоліо</a></li>
@@ -84,7 +84,7 @@
                 </svg>
               </div>
               <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
             <li class="features__item">
               <div class="features__icon">
@@ -93,7 +93,7 @@
                 </svg>
               </div>
               <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
             <li class="features__item">
               <div class="features__icon">
@@ -102,7 +102,7 @@
                 </svg>
               </div>
               <h3 class="features__title">ПЛАНУВАННЯ</h3>
-              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+              <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
             <li class="features__item">
               <div class="features__icon">
@@ -111,7 +111,7 @@
                 </svg>
               </div>
               <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              <p class="features__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
         </div>
@@ -152,7 +152,7 @@
                 alt="Ігор Дем`яненко фото"
                 width="270"
               />
-              <div class="team-wrapper">
+              <div class="team__content-inner">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="team__social-list">
@@ -189,7 +189,7 @@
             </li>
             <li class="team__list-item">
               <img src="./images/photo-olga-repina.jpg" alt="Ольга Рєпіна фото" width="270" />
-              <div class="team-wrapper">
+              <div class="team__content-inner">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
                 <ul class="team__social-list">
@@ -226,7 +226,7 @@
             </li>
             <li class="team__list-item">
               <img src="./images/photo-mykola-tarasoc.jpg" alt="Микола Тарасов фото" width="270" />
-              <div class="team-wrapper">
+              <div class="team__content-inner">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
                 <ul class="team__social-list">
@@ -267,7 +267,7 @@
                 alt="Михайло Єрмаков фото"
                 width="270"
               />
-              <div class="team-wrapper">
+              <div class="team__content-inner">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="team__social-list">
@@ -366,10 +366,10 @@
         <div class="footer__inner">
         <div class="footer__inner-item">
           <a href="" class="logo link--decoration logo--white"><span class="logo__text">Web</span>Studio</a>
-          <address class="address">
+          <address class="footer__address">
             м. Київ, пр-т Лесі Українки, 26<br />
-            <span class="address-info shadow">info@devstudio.com</span><br />
-            <span class="address-info">+38 096 111 11 11</span>
+            <span class="footer__address-info footer__address--shadow">info@devstudio.com</span><br />
+            <span class="footer__address-info">+38 096 111 11 11</span>
           </address>
         </div>
         <div class="footer__inner-item">
@@ -411,7 +411,7 @@
           <div class="form-subscription__inner">
             <label for="email"></label>
             <input type="email" name="email" id="email" class="form-subscription__input" placeholder="E-mail" />
-            <button type="submit" class="button button--primary button--size">
+            <button type="submit" class="button button--primary button--sub-size">
               Підписатися
               <svg class="form-subscription__icon" width="24px" height="24px">
                 <use href="./images/svg-sprite.svg#icon-icon-send"></use>
@@ -467,7 +467,7 @@
             <a href="" class="modal-form__policy-link policy__item--indent">Умови договору</a>
           </div>
           <div class="modal-form__btn-field">
-            <button type="submit" class="button button--primary button--size">Відправити</button>
+            <button type="submit" class="button button--primary modal-form__button--size">Відправити</button>
           </div>
         </form>
         <button class="modal__btn-close" data-modal-close>
