@@ -3,6 +3,7 @@
 }
 
 .customers__title {
+  @extend %title;
   margin-bottom: 50px;
 
   text-align: center;
@@ -11,6 +12,7 @@
 }
 
 .customers__list {
+  @extend %list;
   display: flex;
 }
 

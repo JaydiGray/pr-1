@@ -64,6 +64,7 @@
 }
 
 .modal__title {
+  @extend %title;
   text-align: center;
   font-size: 20px;
   line-height: 1.15;

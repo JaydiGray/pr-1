@@ -1,14 +1,13 @@
 .logo {
-  margin-right: 93px;
-}
-
-.logo {
+  @extend %link;
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.78px;
   font-style: normal;
+
+  margin-right: 93px;
 }
 
 .logo__text {

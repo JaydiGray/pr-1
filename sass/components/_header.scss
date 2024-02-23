@@ -9,6 +9,7 @@
 }
 
 .header-nav__list {
+  @extend %list;
   display: flex;
   align-items: center;
 }
@@ -19,6 +20,7 @@
 
 .header-nav__link,
 .contact-nav__link {
+  @extend %link;
   padding: 32px 0;
   display: block;
 
@@ -77,6 +79,7 @@
 }
 
 .contact-nav {
+  @extend %list;
   display: flex;
   align-items: center;
 

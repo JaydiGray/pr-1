@@ -5,6 +5,7 @@
 }
 
 .team__list {
+  @extend %list;
   display: flex;
 }
 
@@ -30,6 +31,7 @@
 }
 
 .team__title {
+  @extend %title;
   margin-bottom: 50px;
 
   text-align: center;
@@ -38,6 +40,7 @@
 }
 
 .team__name {
+  @extend %title;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -58,6 +61,7 @@
 }
 
 .team__social-list {
+  @extend %list;
   display: flex;
   justify-content: center;
 }

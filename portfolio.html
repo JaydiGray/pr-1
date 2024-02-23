@@ -8,14 +8,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!--Шапка-->
@@ -24,27 +24,25 @@
       <div class="container">
         <div class="header-inner">
           <nav class="header-nav">
-            <a href="" class="logo link--decoration"><span class="logo__text">Web</span>Studio</a>
+            <a href="" class="logo"><span class="logo__text">Web</span>Studio</a>
             <ul class="header-nav__list">
               <li class="header-nav__item">
-                <a href="./index.html" class="header-nav__link link--decoration">Студія</a>
+                <a href="./index.html" class="header-nav__link">Студія</a>
               </li>
               <li class="header-nav__item">
-                <a
-                  href="./portfolio.html"
-                  class="header-nav__link link--decoration header-nav--current"
+                <a href="./portfolio.html" class="header-nav__link header-nav--current"
                   >Портфоліо</a
                 >
               </li>
               <li class="header-nav__item">
-                <a href="" class="header-nav__link link--decoration">Контакти</a>
+                <a href="" class="header-nav__link">Контакти</a>
               </li>
             </ul>
           </nav>
 
           <ul class="contact-nav">
             <li class="contact-nav__item">
-              <a href="mailto:info@devstudio.com" class="contact-nav__link link--decoration">
+              <a href="mailto:info@devstudio.com" class="contact-nav__link">
                 <svg class="contact-nav__icon" width="16px" height="16px">
                   <use href="./images/svg-sprite.svg#icon-letter"></use>
                 </svg>
@@ -52,7 +50,7 @@
               >
             </li>
             <li class="contact-nav__item">
-              <a href="tel:+380961111111" class="contact-nav__link link--decoration">
+              <a href="tel:+380961111111" class="contact-nav__link">
                 <svg class="contact-nav__icon" width="10px" height="16px">
                   <use href="./images/svg-sprite.svg#icon-smartphone"></use>
                 </svg>
@@ -89,7 +87,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-1.jpg" alt="Ноутбук" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-1.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -106,6 +109,7 @@
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
                   <img
+                    class="portfolio__image"
                     src="./images/portfolio-project-2.jpg"
                     alt="Постер. Два баскетболіста"
                     width="370"
@@ -125,7 +129,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-3.jpg" alt="Постер ресторана" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-3.jpg"
+                    alt="Постер ресторана"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -141,7 +150,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-4.jpg" alt="Навушники" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-4.jpg"
+                    alt="Навушники"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -157,7 +171,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-5.jpg" alt="Дві коробки" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-5.jpg"
+                    alt="Дві коробки"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -173,7 +192,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-6.jpg" alt="Монітор" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-6.jpg"
+                    alt="Монітор"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -189,7 +213,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-7.jpg" alt="Книга" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-7.jpg"
+                    alt="Книга"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -205,7 +234,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-8.jpg" alt="Закладка" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-8.jpg"
+                    alt="Закладка"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -221,7 +255,12 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
-                  <img src="./images/portfolio-project-9.jpg" alt="Ноутбук" width="370" />
+                  <img
+                    class="portfolio__image"
+                    src="./images/portfolio-project-9.jpg"
+                    alt="Ноутбук"
+                    width="370"
+                  />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -245,13 +284,12 @@
       <div class="container">
         <div class="footer__inner">
           <div class="footer__inner-item">
-            <a href="" class="logo link--decoration logo--white"
-              ><span class="logo__text">Web</span>Studio</a
-            >
-            <address class="address">
+            <a href="" class="logo logo--white"><span class="logo__text">Web</span>Studio</a>
+            <address class="footer__address">
               м. Київ, пр-т Лесі Українки, 26<br />
-              <span class="address-info shadow">info@devstudio.com</span><br />
-              <span class="address-info">+38 096 111 11 11</span>
+              <span class="footer__address-info footer__address--shadow">info@devstudio.com</span
+              ><br />
+              <span class="footer__address-info">+38 096 111 11 11</span>
             </address>
           </div>
           <div class="footer__inner-item">
@@ -299,7 +337,7 @@
                 class="form-subscription__input"
                 placeholder="E-mail"
               />
-              <button type="submit" class="button button--primary button--size">
+              <button type="submit" class="button button--primary button--sub-size">
                 Підписатися
                 <svg class="form-subscription__icon" width="24px" height="24px">
                   <use href="./images/svg-sprite.svg#icon-icon-send"></use>

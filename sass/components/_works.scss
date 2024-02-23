@@ -3,6 +3,7 @@
 }
 
 .works__title {
+  @extend %title;
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -14,6 +15,7 @@
 }
 
 .works__list {
+  @extend %list;
   display: flex;
 }
 
