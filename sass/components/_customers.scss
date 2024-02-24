@@ -13,28 +13,26 @@
 
 .customers__list {
   @extend %list;
-  display: flex;
+  @include centeredFlex(flex);
 }
 
 .customers__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredFlex(flex);
   width: 170px;
   height: 92px;
   background-repeat: no-repeat;
   background-size: 106px 60px;
   background-position: center;
-  border: 1px solid var(--link-color);
+  border: 1px solid getColor('link-color');
   border-radius: 4px;
-  fill: var(--link-color);
+  fill: getColor('link-color');
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
-    border-color: var(--button-background-color);
-    fill: var(--button-background-color);
+    border-color: getColor('button-background-color');
+    fill: getColor('button-background-color');
   }
 }
 

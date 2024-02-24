@@ -5,8 +5,7 @@
 
 .portfolio__filter {
   @extend %list;
-  display: flex;
-  justify-content: center;
+  @include centeredFlex(flex);
   margin-bottom: 50px;
 }
 
@@ -20,7 +19,7 @@
 
 .portfolio__list {
   @extend %list;
-  display: flex;
+  @include centeredFlex(flex);
   flex-wrap: wrap;
 }
 
@@ -92,5 +91,5 @@
   text-align: left;
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-  color: var(--accent-color);
+  color: getColor('accent-color');
 }

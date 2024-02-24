@@ -16,7 +16,7 @@
 
 .works__list {
   @extend %list;
-  display: flex;
+  @include centeredFlex(flex);
 }
 
 .works__item {
@@ -46,6 +46,6 @@
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: getColor('accent-color');
   background-color: rgba(47, 48, 58, 0.8);
 }

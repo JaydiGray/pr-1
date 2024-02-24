@@ -11,9 +11,9 @@
 }
 
 .logo__text {
-  color: var(--button-background-color);
+  color: getColor('button-background-color');
 }
 
 .logo--white {
-  color: var(--accent-color);
+  color: getColor('accent-color');
 }

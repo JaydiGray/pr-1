@@ -27,7 +27,7 @@
   height: 580px;
   padding: 40px;
 
-  background-color: var(--accent-color);
+  background-color: getColor('accent-color');
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -47,12 +47,12 @@
   margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: getColor('accent-color');
   background-position: center;
   cursor: pointer;
 
   &:hover {
-    fill: var(--button-background-color);
+    fill: getColor('button-background-color');
   }
 }
 
@@ -94,11 +94,11 @@
 .modal-form__item {
   position: relative;
   margin-top: 25px;
-  display: flex;
+  @include centeredFlex(flex);
   flex-direction: column;
 
   &:focus-within > .modal-form__icon {
-    fill: var(--button-background-color);
+    fill: getColor('button-background-color');
   }
 }
 
@@ -124,7 +124,7 @@
   padding: 11px 40px;
 
   &:focus {
-    outline: 1px solid var(--button-background-color);
+    outline: 1px solid getColor('button-background-color');
   }
   &:focus + .modal-form__label,
   &:not(:placeholder-shown) + .modal-form__label {
@@ -145,7 +145,7 @@
   resize: none;
 
   &:focus {
-    outline: 1px solid var(--button-background-color);
+    outline: 1px solid getColor('button-background-color');
   }
   &:focus + .modal-from__area-label,
   &:not(:placeholder-shown) + .modal-from__area-label {
@@ -159,9 +159,8 @@
 }
 
 .modal-form__policy {
-  display: flex;
+  @include centeredFlex(flex);
   flex-direction: row;
-  justify-content: center;
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -184,7 +183,7 @@
   overflow: hidden;
 
   &:checked + .modal-form__policy-text::before {
-    background-color: var(--button-background-color);
+    background-color: getColor('button-background-color');
     background-image: url(../images/check.svg);
     background-size: contain;
     background-origin: border-box;
@@ -195,7 +194,7 @@
 .modal-form__policy-text {
   &::before {
     content: '';
-    display: inline-flex;
+    @include centeredFlex(inline-flex);
     width: 16px;
     height: 16px;
     border: 2px solid rgb(33, 33, 33);
@@ -205,11 +204,10 @@
 }
 
 .modal-form__policy-link {
-  color: var(--button-background-color);
+  color: getColor('button-background-color');
   text-decoration: underline;
 }
 
 .modal-form__btn-field {
-  display: flex;
-  justify-content: center;
+  @include centeredFlex(flex);
 }

@@ -8,7 +8,7 @@
   min-width: 360px;
 
   &:focus {
-    color: var(--background-link-color);
+    color: getColor('background-link-color');
   }
 }
 
@@ -21,7 +21,7 @@
 }
 
 .form-subscription__inner {
-  display: flex;
+  @include centeredFlex(flex);
 }
 
 .form-subscription__icon {
@@ -29,7 +29,7 @@
   top: 50%;
   right: 26px;
   transform: translateY(-50%);
-  fill: var(--accent-color);
+  fill: getColor('accent-color');
   display: block;
 }
 

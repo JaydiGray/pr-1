@@ -8,3 +8,18 @@
   --logo-color: #000000;
   --link-color: #afb1b8;
 }
+
+$colors: (
+  'primary-text-color': #212121,
+  'secondary-text-color': #757575,
+  'button-background-color': #2196f3,
+  'accent-color': #ffffff,
+  'background-link-color': #f5f4fa,
+  'address-color': rgba(255, 255, 255, 0.6),
+  'logo-color': #000000,
+  'link-color': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
