@@ -155,11 +155,25 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .portfolio__list, .portfolio__filter, .footer__list, .contact-nav, .header-nav__list {
@@ -179,49 +193,20 @@ body {
 }
 
 .header-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 767px) {
+  .header-inner {
+    padding: 16px 0;
+  }
 }
 
-.header-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
+.menu-container {
+  display: none;
 }
 
 .header-nav__link,
 .contact-nav__link {
-  padding: 32px 0;
   display: block;
   color: var(--primary-text-color);
 }
@@ -234,10 +219,6 @@ body {
 .contact-nav__link:focus {
   color: #2196f3;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header__logo--indent {
-  margin-right: 93px;
 }
 
 .header-nav--current {
@@ -255,10 +236,6 @@ body {
   border-radius: 2px;
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .header-nav__link,
 .contact-nav__link {
   font-weight: 500;
@@ -274,19 +251,6 @@ body {
   fill: currentColor;
 }
 
-.contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: auto;
-}
-
 .logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
@@ -294,7 +258,6 @@ body {
   font-size: 26px;
   letter-spacing: 0.78px;
   font-style: normal;
-  margin-right: 93px;
 }
 
 .logo__text {
@@ -369,29 +332,12 @@ body {
 }
 
 .footer__address-info {
-  display: inline-block;
   margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__address--shadow {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.footer__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer__inner-item:not(:last-child) {
-  margin-right: 93px;
 }
 
 .footer__title,
@@ -403,18 +349,6 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
-}
-
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .footer__social-link {
@@ -450,7 +384,6 @@ body {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: rgba(33, 150, 243, 0);
   padding: 15px 0 15px 16px;
-  margin-right: 12px;
   min-width: 360px;
 }
 .form-subscription__input:focus {
@@ -492,18 +425,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.form-subscription__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .form-subscription__icon {
   position: absolute;
   top: 50%;
@@ -512,10 +433,6 @@ body {
           transform: translateY(-50%);
   fill: #ffffff;
   display: block;
-}
-
-.form-subscription--indent {
-  margin-left: 93px;
 }
 
 .portfolio {

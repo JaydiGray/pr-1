@@ -1,10 +1,10 @@
 .customers {
-  padding: 94px 0;
+  // padding: 94px 0;
 }
 
 .customers__title {
   @extend %title;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   text-align: center;
   font-size: 36px;
@@ -13,11 +13,11 @@
 
 .customers__list {
   @extend %list;
-  @include centeredFlex(flex);
+  // @include centeredFlex(flex);
 }
 
 .customers__link {
-  @include centeredFlex(flex);
+  // @include centeredFlex(flex);
   width: 170px;
   height: 92px;
   background-repeat: no-repeat;
@@ -37,5 +37,5 @@
 }
 
 .customers__list-item:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
 }

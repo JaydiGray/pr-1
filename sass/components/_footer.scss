@@ -12,7 +12,7 @@
 }
 
 .footer__address-info {
-  display: inline-block;
+  // display: inline-block;
   margin-top: 9px;
 
   color: getColor('address-color');
@@ -23,11 +23,11 @@
 }
 
 .footer__inner {
-  @include centeredFlex(flex);
+  // @include centeredFlex(flex);
 }
 
 .footer__inner-item:not(:last-child) {
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
 .footer__title,
@@ -44,7 +44,7 @@
 
 .footer__list {
   @extend %list;
-  @include centeredFlex(flex);
+  // @include centeredFlex(flex);
 }
 
 .footer__social-link {
