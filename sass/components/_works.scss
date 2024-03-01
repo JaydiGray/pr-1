@@ -1,5 +1,9 @@
 .works {
-  // padding-bottom: 94px;
+  padding-bottom: 93px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .works__title {
@@ -16,16 +20,16 @@
 
 .works__list {
   @extend %list;
-  // @include centeredFlex(flex);
+  @include centeredFlex(flex);
 }
 
 .works__item {
-  // width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   position: relative;
-}
 
-.works__item:not(:last-child) {
-  // margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .works__image {
