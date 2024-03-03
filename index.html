@@ -26,7 +26,7 @@
       <div class="container">
         <div class="header-inner">
           <a href="" class="logo header__logo--indent"><span class="logo__text">Web</span>Studio</a>
-          <div class="menu-container">
+          <div class="menu-container" data-menu>
           <nav class="header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__item"><a href="./index.html" class="header-nav__link header-nav--current">Студія</a></li>
@@ -54,6 +54,12 @@
             </li>
           </ul>
           </div>
+          <button class="burger" aria-expanded="false" data-menu-button>
+            <svg class="burger__svg" height="40" width="40" aria-label="Switch mobile menu">
+              <use class="burger__menu" href="./images/mobile-menu.svg#icon-burger"></use>
+              <use class="burger__cross" href="./images/mobile-menu.svg#icon-close"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -481,6 +487,7 @@
         </button>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
