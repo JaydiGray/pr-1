@@ -153,6 +153,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 .container {
   padding-left: 15px;
