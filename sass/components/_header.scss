@@ -3,7 +3,7 @@
 }
 
 .header-inner {
-  @include centeredFlex(flex);
+  display: flex;
   border-bottom: 1px solid rgb(236, 236, 236);
 
   @media screen and (max-width: 767px) {
@@ -14,23 +14,26 @@
 .header-nav__list {
   @extend %list;
   @media screen and (min-width: 768px) {
-    @include centeredFlex(flex);
+    display: flex;
   }
 }
 
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+.header-nav__item {
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
 
-.menu-container {
-  // display: none;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .header-nav__link,
 .contact-nav__link {
   @extend %link;
-  padding: 32px 0;
-  display: block;
+  display: inline-block;
 
   color: var(--primary-text-color);
 
@@ -43,10 +46,20 @@
     color: getColor('button-background-color');
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
 }
 
 .header__logo--indent {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .header-nav--current {
@@ -66,8 +79,12 @@
   }
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+.contact-nav__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .header-nav__link,
@@ -88,9 +105,16 @@
 
 .contact-nav {
   @extend %list;
-  @include centeredFlex(flex);
 
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    margin: 32px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    // margin-left: auto;
+  }
 }
 
 // Стилі на мобільне меню
@@ -114,6 +138,10 @@
   &.is-open &__menu {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .burger__svg {
@@ -126,18 +154,26 @@
 }
 
 .menu-container {
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-
   background-color: getColor('accent-color');
-  padding: 15px;
   text-align: center;
 
   &.is-open {
-    display: block;
+    @media screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    padding: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
