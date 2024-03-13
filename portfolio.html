@@ -28,10 +28,12 @@
             <nav class="header-nav">
               <ul class="header-nav__list">
                 <li class="header-nav__item">
-                  <a href="./index.html" class="header-nav__link header-nav--current">Студія</a>
+                  <a href="./index.html" class="header-nav__link">Студія</a>
                 </li>
                 <li class="header-nav__item">
-                  <a href="./portfolio.html" class="header-nav__link">Портфоліо</a>
+                  <a href="./portfolio.html" class="header-nav__link header-nav--current"
+                    >Портфоліо</a
+                  >
                 </li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
               </ul>
@@ -113,10 +115,15 @@
               <a href="" class="portfolio__link">
                 <div class="portfolio__image-inner">
                   <img
+                    srcset="
+                      ./images/basketball/basketball-w354.jpg 354w,
+                      ./images/basketball/basketball-w370.jpg 370w,
+                      ./images/basketball/basketball-w450.jpg 450w
+                    "
                     class="portfolio__image"
-                    src="./images/portfolio-project-2.jpg"
+                    src="./images/basketball/basketball-w354.jpg"
                     alt="Постер. Два баскетболіста"
-                    width="370"
+                    sizes="(min-width: 1200) 30vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <p class="portfolio__item-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

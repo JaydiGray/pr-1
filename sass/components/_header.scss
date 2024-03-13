@@ -183,6 +183,7 @@
   &.is-open {
     @media screen and (max-width: 767px) {
       display: block;
+      z-index: 2;
     }
   }
 
